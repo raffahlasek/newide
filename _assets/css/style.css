@@ -236,6 +236,10 @@
 	float:left;
 	margin-bottom:20px;
  }
+ .form-isi{
+	margin: 10px 0;
+ }
+ 
  /*===================================== FOOTER ====================*/
  .footer {
  	text-align: center;
