@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<meta charset="utf-8">
+	<title>RIMANEWS ADS</title>
+
+	<!-- Add Style-->
+	<link rel="stylesheet" href="_assets/css/style.css">
+	<link rel="stylesheet" href="_assets/css/reset.css">
+	<link rel="stylesheet" href="_assets/css/button.css">
+
+	<style type="text/css">
+		.advsetting-container{
+			padding: 40px 10px;
+			color:#929292;
+			font-size: 16px;
+		}
+		.advsetting-container h3{
+			padding-bottom:10px;
+			font-size: 20px;
+			font-weight: bold;
+			color:#004293;
+		}
+		.advsetting-subtitle{
+			font-weight:bold;
+			padding-bottom:10px;
+			color:#727272;
+		}
+		.advsetting-historyPendapatan{
+			float:left;
+			padding:15px;
+			margin-top:30px;
+			width:40%;
+			background-color:#F2F2F2;
+			font-size:12px;
+		}
+		.advsetting-historyPendapatan-content{
+			padding:5px 0;
+		}
+		.advsetting-historyPendapatan-contentList{
+			float:left;
+			width:40%;
+		}
+		.advsetting-tableContainer{
+			float:left;
+			width:100%;
+		}
+		.advsetting-tableContainer table {
+			border: solid 1px #797979;
+			text-align: center;
+		}
+		.advsetting-tableContainer table th {
+			padding: 10px 0;
+			border: solid 1px #797979;
+			font-weight: bold;
+			text-align: center;
+			color:#000;
+		}
+		.advsetting-tableContainer table tbody td {
+			border-right: solid 1px #797979;
+			border-left: solid 1px #797979;
+			padding:15px 5px;
+			font-size: 14px;
+		}
+		.advsetting-tableContainer table tbody td a{
+			text-decoration: none;
+			color:#1071C0;
+		}
+		.advsetting-tableContainer table tbody td span{
+			font-weight: bold;
+			color:#FB2727;
+		}
+		.advsetting-tableodd{
+			background-color: #EBECF0;
+		}
+		.buttonDeactive {
+		  color: #fff;
+		  padding: 5px 5px;
+		  background-color: #FD2425;
+		  border:none;
+		  /*Gradient*/
+			background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+			background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+			background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+			background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+			background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+		}
+		.buttonDeactive:hover{
+			 
+			/*Gradient*/
+			background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+			background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+			background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+			background-image: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+			background-image: linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+		}
+		.icon-checklist{
+			margin-left: 8px;
+			background-image: url("_assets/img/icon-checklist.png");
+			background-repeat: no-repeat;
+			width:22px;
+			height: 22px;
+		}
+		.icon-unchecklist{
+			margin-left: 8px;
+			background-image: url("_assets/img/icon-unchecklist.png");
+			background-repeat: no-repeat;
+			width:22px;
+			height: 22px;
+		}
+		.paging{
+			float: right;
+			border:solid 1px #A2A2A2;
+			font-size: 12px;
+		}
+		.paging a{
+			color:#929292;
+		}
+		.paging-element{
+			float:left;
+			border-right:solid 1px #A2A2A2;
+			padding:5px 5px;
+			font-weight: bold;
+		}
+		.paging-selected{
+			background-color: #CACACA;
+			color: #727272;
+		}
+		.icon-rightarrow{
+			padding: 3px 3px;
+			background-image: url("_assets/img/icon-rightarrow.png");
+			background-repeat: no-repeat;
+			width:16px;
+			height: 16px;
+			background-position: 4px;
+		}
+		.icon-rightarrowdouble{
+			padding: 3px 3px;
+			background-image: url("_assets/img/icon-rightarrowdouble.png");
+			background-repeat: no-repeat;
+			width:16px;
+			height: 16px;
+			background-position: 4px;
+			border:0;
+		}
+		.icon-leftarrow{
+			padding: 3px 3px;
+			background-image: url("_assets/img/icon-leftarrow.png");
+			background-repeat: no-repeat;
+			width:16px;
+			height: 16px;
+			background-position: 4px;
+		}
+		.icon-leftarrowdouble{
+			padding: 3px 3px;
+			background-image: url("_assets/img/icon-leftarrowdouble.png");
+			background-repeat: no-repeat;
+			width:16px;
+			height: 16px;
+			background-position: 4px;
+			border:0;
+		}
+		.advsetting-textdarkgrey{
+			color:#727272;
+		}
+		.bold{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<!-- Wrapper For All -->
+	<div class="wrapper">
+		<header id="header-menu">
+			<div class="logo-header">
+				<img src="_assets\img\logo.jpg" />
+			</div>
+			<nav id="nav-header">
+				<ul class="menu">
+					<li class="menu-selected"><a href="" title="">Why It Work</a></li>
+					<li><a href="" title="">How To Get Started</a></li>
+					<li><a href="" title="">Contact Us</a></li>
+					<li><a href="" title="" class="btn-getstarted">Get Started</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="clear"></div>
+		
+
+		<!-- START content -->
+		<div class="advsetting-container">
+			<h3 style="">Advertorial Settings</h3>
+			<div style="border-top:solid 1px #D2D2D2;padding-bottom:20px;"></div>
+			
+			<div class="advsetting-subtitle">History Date Settings</div>
+
+			<!-- START History Start date -->
+			<div style="padding-bottom: 10px;">
+				<!-- day -->
+				<select name="">
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+				</select>
+
+				<!-- month -->
+				<select name="">
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+				</select>
+
+				<!-- year -->
+				<select name="">
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>
+				</select>
+
+				<span class="advsetting-textdarkgrey bold">sampai dengan </span>
+
+				<!-- day -->
+				<select name="">
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+				</select>
+
+				<!-- month -->
+				<select name="">
+					<option>01</option>
+					<option>02</option>
+					<option>03</option>
+					<option>04</option>
+					<option>05</option>
+				</select>
+
+				<!-- year -->
+				<select name="">
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>
+				</select>
+			</div>
+			<!-- END History Start date -->
+
+			<a href=""><div class="btngreen btncmpgn" style="margin-left:0;" onclick="">Submit</div></a>
+
+			<div class="clear"></div>
+
+			<!-- START History pendapatan per periode -->
+			<div class="advsetting-historyPendapatan">
+				<div class="advsetting-subtitle" style="font-size:14px;">History Pendapatan <span style="font-weight:bold;color:#014a97">12 Des 2014 - 4 Jan 2015:</span></div>
+
+				<div>
+					<div class="advsetting-historyPendapatan-content">
+						<div class="advsetting-historyPendapatan-contentList">Voucher Terbit</div>
+						<div>: 3 Voucher (Rp. 5.000.000,00)</div>
+					</div>
+					<div class="advsetting-historyPendapatan-content">
+						<div class="advsetting-historyPendapatan-contentList">Voucher Active</div>
+						<div>: 2 Voucher (Rp. 1.000.000,00)</div>
+					</div>
+					<div class="advsetting-historyPendapatan-content">
+						<div class="advsetting-historyPendapatan-contentList">Voucher Deactive</div>
+						<div>: 1 Voucher (Rp. 2.000.000,00)</div>
+					</div>
+					<div class="advsetting-historyPendapatan-content">
+						<div class="advsetting-historyPendapatan-contentList">Voucher Non Active</div>
+						<div>: 0 Voucher (Rp. 0)</div>
+					</div>
+				</div>
+
+				<div style="border-bottom: solid 1px #929292;padding:0 10px;margin: 0 -10px 0 -10px;"></div>
+
+				<div style="padding:10px 0 0 0;">
+					<div class="advsetting-historyPendapatan-contentList bold">Pendapatan</div>
+					<div class="bold">: Rp. 5.000.000,00</div>
+				</div>
+			</div>
+			<!-- END History pendapatan per periode -->
+
+			<div style="float:left;padding-left:10px;">&nbsp;</div>
+
+			<!-- START History seleuruh pendapatan -->
+			<div class="advsetting-historyPendapatan">
+				<div class="advsetting-subtitle">History Seluruh Pendapatan</div>
+
+				<div>
+					<div class="advsetting-historyPendapatan-content">
+						<div class="advsetting-historyPendapatan-contentList">Voucher Terbit</div>
+						<div>: 6 Voucher (Rp. 5.500.000,00)</div>
+					</div>
+					<div class="advsetting-historyPendapatan-content">
+						<div class="advsetting-historyPendapatan-contentList">Voucher Active</div>
+						<div>: 1 Voucher (Rp. 1.000.000,00)</div>
+					</div>
+					<div class="advsetting-historyPendapatan-content">
+						<div class="advsetting-historyPendapatan-contentList">Voucher Deactive</div>
+						<div>: 3 Voucher (Rp. 2.500.000,00)</div>
+					</div>
+					<div class="advsetting-historyPendapatan-content">
+						<div class="advsetting-historyPendapatan-contentList">Voucher Non Active</div>
+						<div>: 2 Voucher (Rp. 2.000.000)</div>
+					</div>
+				</div>
+
+				<div style="border-bottom: solid 1px #929292;padding:0 10px;margin: 0 -10px 0 -10px;"></div>
+
+				<div style="padding:10px 0 0 0;">
+					<div class="advsetting-historyPendapatan-contentList bold">Pendapatan</div>
+					<div class="bold">: Rp. 5.000.000</div>
+				</div>
+			</div>
+			<!-- END History seluruh pendapatan -->
+
+			<div class="clear"></div>
+
+			<div style="border-top:solid 1px #D2D2D2;padding-bottom:20px;margin-top:20px;"></div>
+
+			<!-- START Generate Voucher Code -->
+			<div>
+				<div class="bold" style="float:left;padding-right:20px;">Generate Voucher Code:</div>
+
+				<!-- Select Box -->
+				<div style="float:left;">
+					<select name="">
+						<option value="">Rp. 300.000,00</option>
+						<option value="">Rp. 350.000,00</option>
+						<option value="">Rp. 400.000,00</option>
+					</select>
+
+					<select name="">
+						<option value="">2x Quota Post</option>
+						<option value="">3x Quota Post</option>
+						<option value="">4x Quota Post</option>
+					</select>
+				</div>
+
+				<div style="float:left;margin-left:10px;">
+					<a href=""><div class="btngreen btncmpgn" style="margin: 0 0 0 0;" onclick="">Generate</div></a>
+				</div>
+			</div>
+			<!-- END Generate Voucher Code -->
+
+			<div class="clear"></div>
+
+			<!-- START Tabel -->
+			<div>
+				<!-- Table Paging atas -->
+				<div class="paging">
+					<div class="paging-element">Page 1 of 99</div>
+					<a href="#"><div class="paging-element">1</div></a>
+					<a href="#"><div class="paging-element">2</div></a>
+					<a href=""><div class="paging-element paging-selected">3</div></a>
+					<a href=""><div class="paging-element">4</div></a>
+					<a href=""><div class="paging-element">1</div></a>
+					<a href="#"><div class="paging-element icon-rightarrow"></div></a>
+					<a href=""><div class="paging-element icon-rightarrowdouble"></div></a>
+				</div>
+
+				<div style="padding-bottom:20px;">&nbsp;</div>
+
+				<div class="advsetting-tableContainer">
+					<table>
+						<thead>
+							<th style="width:100px;">ID Penerbit</th>
+							<th style="width:120px;">Waktu Terbit</th>
+							<th>Kode Voucher</th>
+							<th>Username</th>
+							<th style="width:100px;">Link Advertorial</th>
+							<th style="width:50px;">Quota</th>
+							<th style="width:130px;">Harga</th>
+							<th>Status</th>
+							<th>Action</th>
+						</thead>
+						<tbody>
+							<tr class="advsetting-tableodd">
+								<td>Sabina</td>
+								<td>3 Sep 2014 (23:00 WIB)</td>
+								<td>1234-SHA9-SAK2-213Q</td>
+								<td>PT. Garuda Indonesia</td>
+								<td><a href="#">http://www.rimanews.com</a></td>
+								<td>2/4</td>
+								<td>Rp. 1.000.000</td>
+								<td><div class="icon-checklist"></div></td>
+								<td><input type="button" class="buttonDeactive" value="Deactive"/></td>
+							</tr>
+							<tr>
+								<td>Sabina</td>
+								<td>3 Sep 2014 (23:00 WIB)</td>
+								<td>1234-SHA9-SAK2-213Q</td>
+								<td>PT. Garuda Indonesia</td>
+								<td><a href="#">http://www.rimanews.com</a></td>
+								<td>2/4</td>
+								<td>Rp. 1.000.000</td>
+								<td><div class="icon-unchecklist"></div></td>
+								<td><span>Deactivated</span></td>
+							</tr>
+							<tr class="advsetting-tableodd">
+								<td>Sabina</td>
+								<td>3 Sep 2014 (23:00 WIB)</td>
+								<td>1234-SHA9-SAK2-213Q</td>
+								<td>PT. Garuda Indonesia</td>
+								<td><a href="#">http://www.rimanews.com</a></td>
+								<td>2/4</td>
+								<td>Rp. 1.000.000</td>
+								<td>-</td>
+								<td><input type="button" class="buttonDeactive" value="Deactive"/></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- Table Paging bawah -->
+				<div>&nbsp;</div>
+
+				<div class="paging">
+					<div class="paging-element">Page 1 of 99</div>
+					<a href="#"><div class="paging-element">1</div></a>
+					<a href="#"><div class="paging-element">2</div></a>
+					<a href=""><div class="paging-element paging-selected">3</div></a>
+					<a href=""><div class="paging-element">4</div></a>
+					<a href=""><div class="paging-element">1</div></a>
+					<a href="#"><div class="paging-element icon-rightarrow"></div></a>
+					<a href=""><div class="paging-element icon-rightarrowdouble"></div></a>
+				</div>
+				
+			</div>
+			<!-- END Tabel -->
+
+			<div class="clear"></div>
+
+		</div>
+		<!-- END content -->
+		
+		
+		
+		
+		<!-- footer -->
+		<footer class="footer">
+			<nav class="footer-menu">
+				<ul>
+					<li><a href="" title="">About</a></li>
+					<li><a href="" title="">Press</a></li>
+					<li><a href="" title="">Copyright</a></li>
+					<li><a href="" title="">Advertise</a></li>
+					<li><a href="" title="">Developers</a></li>
+					<li><a href="" title="">Help</a></li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>
