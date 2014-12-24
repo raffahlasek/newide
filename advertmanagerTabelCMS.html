@@ -18,7 +18,11 @@
 		.advsetting-container h3{
 			padding-bottom:10px;
 			font-size: 20px;
-			font-weight: bold;
+			font-weight: normal;
+			float:left;
+		}
+		.advsetting-container h3 a{
+			text-decoration: none;
 			color:#004293;
 		}
 		.advsetting-subtitle{
@@ -40,6 +44,34 @@
 		.advsetting-historyPendapatan-contentList{
 			float:left;
 			width:40%;
+		}
+		.advsetting-select{
+			float: left;
+			padding:0 10px 0 0;
+			margin:0;
+			border: 1px solid #929292;
+			width: 60px;
+			border-radius: 3px;
+			overflow: hidden;
+			background-color: #fff;
+			background: #fff url("_assets/img/icon-select-arrowdown.png") no-repeat 100% 50%;
+			background-size: 20px 30px;
+		}
+		.advsetting-select select{
+			padding: 5px 8px;
+		    width: 130%;
+		    border: none;
+		    box-shadow: none;
+		    background-color: transparent;
+		    background-image: none;
+		    -webkit-appearance: none;
+		       -moz-appearance: none;
+		            appearance: none;
+            color:#626262;
+            font-weight: bold;
+		}
+		.advsetting-select select:focus{
+			outline: none;
 		}
 		.advsetting-tableContainer{
 			float:left;
@@ -160,6 +192,22 @@
 			background-position: 4px;
 			border:0;
 		}
+		.advset-footer{
+			background-color:#014a97;
+			padding-bottom:0;
+		}
+		.advset-footer-text{
+			font-weight:bold;
+			color:#FFF;
+		}
+		.advset-footer-decoration{
+			float:right;margin: -28px -4px 0 0;
+			width: 0;
+			height: 0;
+			border-left: 40px solid transparent;
+			border-right: 40px solid #053160;
+			border-top: 40px solid transparent;
+		}
 		.advsetting-textdarkgrey{
 			color:#727272;
 		}
@@ -177,10 +225,9 @@
 			</div>
 			<nav id="nav-header">
 				<ul class="menu">
-					<li class="menu-selected"><a href="" title="">Why It Work</a></li>
-					<li><a href="" title="">How To Get Started</a></li>
-					<li><a href="" title="">Contact Us</a></li>
-					<li><a href="" title="" class="btn-getstarted">Get Started</a></li>
+					<li class="menu-selected"><a href="" title="">Home</a></li>
+					<li><a href="" title="">Why It Work</a></li>
+					<li><a href="" title="" class="btn-getstarted">How to Get Started</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -189,7 +236,13 @@
 
 		<!-- START content -->
 		<div class="advsetting-container">
-			<h3 style="">Advertorial Settings</h3>
+			<h3 style="padding-right:10px;"><a href="#" class="bold">Advertorial Settings </a></h3>
+			<div style="float:left;border-right:solid 1px #D2D2D2;padding:5px 0;margin-top:0px;">&nbsp;</div>
+			<h3 style="padding-left:10px;"><a href="#">Tambah User</a></h3>
+			<div style="float:left;border-right:solid 1px #D2D2D2;padding:5px 0;margin-top:0px;">&nbsp;</div>
+			<h3 style="padding-left:10px;"><a href="#">Daftar Berita</a></h3>
+
+			<div class="clear"></div>
 			<div style="border-top:solid 1px #D2D2D2;padding-bottom:20px;"></div>
 			
 			<div class="advsetting-subtitle">History Date Settings</div>
@@ -197,64 +250,90 @@
 			<!-- START History Start date -->
 			<div style="padding-bottom: 10px;">
 				<!-- day -->
-				<select name="">
-					<option>01</option>
-					<option>02</option>
-					<option>03</option>
-					<option>04</option>
-					<option>05</option>
-				</select>
+				<div class="advsetting-select">
+					<select name="">
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+						<option>05</option>
+					</select>
+				</div>
+
+				<div style="float:left;padding-right:10px;">&nbsp;</div>
 
 				<!-- month -->
-				<select name="">
-					<option>01</option>
-					<option>02</option>
-					<option>03</option>
-					<option>04</option>
-					<option>05</option>
-				</select>
+				<div class="advsetting-select">
+					<select name="">
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+						<option>05</option>
+					</select>
+				</div>
+
+				<div style="float:left;padding-right:10px;">&nbsp;</div>
 
 				<!-- year -->
-				<select name="">
-					<option>2015</option>
-					<option>2016</option>
-					<option>2017</option>
-					<option>2018</option>
-					<option>2019</option>
-					<option>2020</option>
-				</select>
+				<div class="advsetting-select">
+					<select name="">
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option>2018</option>
+						<option>2019</option>
+						<option>2020</option>
+					</select>
+				</div>
 
-				<span class="advsetting-textdarkgrey bold">sampai dengan </span>
+				<div style="float:left;padding-right:10px;">&nbsp;</div>
+
+				<span class="advsetting-textdarkgrey bold" style="float:left;padding-top:5px;">sampai dengan </span>
+
+				<div style="float:left;padding-right:10px;">&nbsp;</div>
 
 				<!-- day -->
-				<select name="">
-					<option>01</option>
-					<option>02</option>
-					<option>03</option>
-					<option>04</option>
-					<option>05</option>
-				</select>
+				<div class="advsetting-select">
+					<select name="">
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+						<option>05</option>
+					</select>
+				</div>
+
+				<div style="float:left;padding-right:10px;">&nbsp;</div>
 
 				<!-- month -->
-				<select name="">
-					<option>01</option>
-					<option>02</option>
-					<option>03</option>
-					<option>04</option>
-					<option>05</option>
-				</select>
+				<div class="advsetting-select">
+					<select name="">
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+						<option>05</option>
+					</select>
+				</div>
+
+				<div style="float:left;padding-right:10px;">&nbsp;</div>
 
 				<!-- year -->
-				<select name="">
-					<option>2015</option>
-					<option>2016</option>
-					<option>2017</option>
-					<option>2018</option>
-					<option>2019</option>
-					<option>2020</option>
-				</select>
+				<div class="advsetting-select">
+					<select name="">
+						<option>2015</option>
+						<option>2016</option>
+						<option>2017</option>
+						<option>2018</option>
+						<option>2019</option>
+						<option>2020</option>
+					</select>
+				</div>
 			</div>
 			<!-- END History Start date -->
+
+			<div class="clear"></div>
 
 			<a href=""><div class="btngreen btncmpgn" style="margin-left:0;" onclick="">Submit</div></a>
 
@@ -332,25 +411,32 @@
 
 			<!-- START Generate Voucher Code -->
 			<div>
-				<div class="bold" style="float:left;padding-right:20px;">Generate Voucher Code:</div>
+				<div class="advsetting-textdarkgrey bold" style="float:left;padding-right:20px;padding-top:5px;">Generate Voucher Code:</div>
 
 				<!-- Select Box -->
 				<div style="float:left;">
-					<select name="">
-						<option value="">Rp. 300.000,00</option>
-						<option value="">Rp. 350.000,00</option>
-						<option value="">Rp. 400.000,00</option>
-					</select>
+				
+					<div class="advsetting-select" style="width:140px;">
+						<select name="">
+							<option value="">Rp. 300.000,00</option>
+							<option value="">Rp. 350.000,00</option>
+							<option value="">Rp. 400.000,00</option>
+						</select>
+					</div>
 
-					<select name="">
-						<option value="">2x Quota Post</option>
-						<option value="">3x Quota Post</option>
-						<option value="">4x Quota Post</option>
-					</select>
+					<div style="float:left;padding-right:10px;">&nbsp;</div>
+
+					<div class="advsetting-select" style="width:140px;">
+						<select name="">
+							<option value="">2x Quota Post</option>
+							<option value="">3x Quota Post</option>
+							<option value="">4x Quota Post</option>
+						</select>
+					</div>
 				</div>
 
 				<div style="float:left;margin-left:10px;">
-					<a href=""><div class="btngreen btncmpgn" style="margin: 0 0 0 0;" onclick="">Generate</div></a>
+					<a href=""><div class="btngreen btncmpgn" style="margin: 0 0 0 0;padding: 6px 10px 6px 10px;" onclick="">Generate</div></a>
 				</div>
 			</div>
 			<!-- END Generate Voucher Code -->
@@ -450,17 +536,12 @@
 		
 		
 		<!-- footer -->
-		<footer class="footer">
-			<nav class="footer-menu">
-				<ul>
-					<li><a href="" title="">About</a></li>
-					<li><a href="" title="">Press</a></li>
-					<li><a href="" title="">Copyright</a></li>
-					<li><a href="" title="">Advertise</a></li>
-					<li><a href="" title="">Developers</a></li>
-					<li><a href="" title="">Help</a></li>
-				</ul>
-			</nav>
+		<footer class="footer advset-footer" style="">
+			<div class="advset-footer-text">
+				Rimanews &copy; 2014
+			</div>
+
+			<div class="advset-footer-decoration"></div>
 		</footer>
 	</div>
 </body>
