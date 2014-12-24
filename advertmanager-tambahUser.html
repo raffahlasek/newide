@@ -25,6 +25,10 @@
 			text-decoration: none;
 			color:#004293;
 		}
+		.advsetting-tambahUser input{
+			padding: 5px 10px 5px 10px;
+			width:350px;
+		}
 		.advsetting-subtitle{
 			font-weight:bold;
 			padding-bottom:10px;
@@ -45,10 +49,7 @@
 			float:left;
 			width:40%;
 		}
-		input{
-			padding: 5px 10px 5px 10px;
-			width:350px;
-		}
+		
 	</style>
 </head>
 <body>
@@ -70,8 +71,8 @@
 		
 
 		<!-- START content -->
-		<div class="advsetting-container">
-			<h3 style="padding-right:10px;"><a href="#">Advertorial Settings </a></h3>
+		<div class="advsetting-container advsetting-tambahUser">
+			<h3 style="padding-right:10px;"><a href="advertmanagerTabelCMS.html">Advertorial Settings </a></h3>
 			<div style="float:left;border-right:solid 1px #D2D2D2;padding:5px 0;margin-top:0px;">&nbsp;</div>
 			<h3 style="padding-left:10px;"><a href="#" class="bold">Tambah User</a></h3>
 			<div style="float:left;border-right:solid 1px #D2D2D2;padding:5px 0;margin-top:0px;">&nbsp;</div>
@@ -85,34 +86,34 @@
 			<div class="clear"></div>
 
 			<div>
-				<div style="padding:10px 0;">Nama Lengkap</div>
+				<div class="advsetting-subtitle" style="padding:10px 0;">Nama Lengkap</div>
 				<div>
 					<input type="text" placeholder="Nama lengkap" />
 				</div>
 			</div>
 
 			<div>
-				<div style="padding:10px 0;">Username</div>
+				<div class="advsetting-subtitle" style="padding:10px 0;">Username</div>
 				<div>
 					<input type="text" placeholder="Username" />
 				</div>
 			</div>
 
 			<div>
-				<div style="padding:10px 0;">Password</div>
+				<div class="advsetting-subtitle" style="padding:10px 0;">Password</div>
 				<div>
-					<input type="text" placeholder="Username" />
+					<input type="text" placeholder="Password" />
 				</div>
 			</div>
 
 			<div>
-				<div style="padding:10px 0;">Konfirmasi Password <span>(ulangi password)</span></div>
+				<div class="advsetting-subtitle" style="padding:10px 0;">Konfirmasi Password <span style="font-weight:normal;font-size:12px;">(ulangi password)</span></div>
 				<div>
-					<input type="text" placeholder="Username" />
+					<input type="text" placeholder="Ulangi Password" />
 				</div>
 			</div>
 
-			<div style="padding:10px 0;">Tipe User</div>
+			<div class="advsetting-subtitle" style="padding:10px 0;">Tipe User</div>
 
 			<!-- START Tipe User -->
 			<div style="padding-bottom: 10px;">
@@ -127,7 +128,7 @@
 			</div>
 			<!-- END Tipe User -->
 
-			<input type="submit" value="Submit" />
+			<input type="submit" class="btngreen btncmpgn" style="float:right;margin:100px 450px 30px 0;width:100px;" value="Submit" />
 
 		</div>
 		<!-- END content -->
@@ -136,7 +137,7 @@
 		
 		
 		<!-- footer -->
-		<footer class="footer advset-footer" style="">
+		<footer class="footer advset-footer" style="padding-bottom:0;">
 			<div class="advset-footer-text">
 				Rimanews &copy; 2014
 			</div>

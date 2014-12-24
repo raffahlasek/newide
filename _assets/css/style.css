@@ -335,7 +335,7 @@
 		border-radius: 3px;
 		overflow: hidden;
 		background-color: #fff;
-		background: #fff url("_assets/img/icon-select-arrowdown.png") no-repeat 100% 50%;
+		background: #fff url("../img/icon-select-arrowdown.png") no-repeat 100% 50%;
 		background-size: 20px 30px;
 	}
 	.advsetting-select select{
@@ -409,14 +409,14 @@
 	}
 	.icon-checklist{
 		margin-left: 8px;
-		background-image: url("_assets/img/icon-checklist.png");
+		background-image: url("../img/icon-checklist.png");
 		background-repeat: no-repeat;
 		width:22px;
 		height: 22px;
 	}
 	.icon-unchecklist{
 		margin-left: 8px;
-		background-image: url("_assets/img/icon-unchecklist.png");
+		background-image: url("../img/icon-unchecklist.png");
 		background-repeat: no-repeat;
 		width:22px;
 		height: 22px;
@@ -441,7 +441,7 @@
 	}
 	.icon-rightarrow{
 		padding: 3px 3px;
-		background-image: url("_assets/img/icon-rightarrow.png");
+		background-image: url("../img/icon-rightarrow.png");
 		background-repeat: no-repeat;
 		width:16px;
 		height: 16px;
@@ -449,7 +449,7 @@
 	}
 	.icon-rightarrowdouble{
 		padding: 3px 3px;
-		background-image: url("_assets/img/icon-rightarrowdouble.png");
+		background-image: url("../img/icon-rightarrowdouble.png");
 		background-repeat: no-repeat;
 		width:16px;
 		height: 16px;
@@ -458,7 +458,7 @@
 	}
 	.icon-leftarrow{
 		padding: 3px 3px;
-		background-image: url("_assets/img/icon-leftarrow.png");
+		background-image: url("../img/icon-leftarrow.png");
 		background-repeat: no-repeat;
 		width:16px;
 		height: 16px;
@@ -466,7 +466,7 @@
 	}
 	.icon-leftarrowdouble{
 		padding: 3px 3px;
-		background-image: url("_assets/img/icon-leftarrowdouble.png");
+		background-image: url("../img/icon-leftarrowdouble.png");
 		background-repeat: no-repeat;
 		width:16px;
 		height: 16px;
