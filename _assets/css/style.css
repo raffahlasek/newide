@@ -427,6 +427,7 @@
 		font-size: 12px;
 	}
 	.paging a{
+		float:left;
 		color:#929292;
 	}
 	.paging-element{
